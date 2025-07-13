@@ -2,20 +2,20 @@
 int main() {
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
+
 // Declaração das variáveis para a carta 1
-char estado1 = "A";
-char codigo1[20] = "A01";
-char nomeCidade1[50] = "SaoPaulo";
+char estado1 = 'A';
+char codigo1[5] = "A01";
+char nomeCidade1[50] = "Saopaulo";
 int populacao1 = 45973197;
 float area1 = 1521202;
 float pib1 = 829.1;
 int pontosTuristicos1 = 83;
 
 // Declaração das variáveis para a carta 2
-char estado2 = "B";
-char codigo2[20] = "B02";
-char nomeCidade2[50] = "MinasGerais";
+char estado2 = 'B';
+char codigo2[5] = "B02";
+char nomeCidade2[50] = "Belohorizonte";
 int populacao2 = 21322691;
 float area2 = 586513983;
 float pib2 = 257.8;
@@ -28,7 +28,7 @@ scanf(" %c", &estado1);
 printf("Codigo da Carta (A01): ");
 scanf("%s", codigo1);
 printf("Nome da Cidade: ");
-scanf("%[^\n]", nomeCidade1); // Lê string com espaços
+scanf("%s", nomeCidade1);
 printf("Populacao: ");
 scanf("%d", &populacao1);
 printf("Area (em km²): ");
@@ -45,7 +45,7 @@ scanf(" %c", &estado2);
 printf("Codigo da Carta (B02): ");
 scanf("%s", codigo2);
 printf("Nome da Cidade: ");
-scanf("%[^\n]", nomeCidade2); // Lê string com espaços
+scanf("%s", nomeCidade2);
 printf("Populacao: ");
 scanf("%d", &populacao2);
 printf("Area (em km²): ");
